@@ -53,6 +53,7 @@ __run_game()
 
   if [[ ! -d "$prefix" ]]; then
      echo -e "[${n}*$c] Creating Proton prefix..." 
+     mkdir "$prefix"
   fi
 
   if [[ ! -f "$gameex" ]]; then
@@ -93,6 +94,7 @@ __run_game_ns()
 
   if [[ ! -d "$prefix" ]]; then
      echo -e "[${n}*$c] Creating Proton prefix..." 
+     mkdir "$prefix"
   fi
 
   if [[ ! -f "$gameex" ]]; then

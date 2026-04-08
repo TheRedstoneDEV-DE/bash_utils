@@ -109,7 +109,7 @@ nsrun ()
   userid=$(id -u $2)
   shift 2
   ip netns exec $ns sudo -u $user \
-    PULSE_SERVER=unix:/run/user/$userid \
+    PULSE_SERVER=unix:/run/user/$userid/pulse/native \
     XDG_RUNTIME_DIR=/run/user/$userid \
     $@
 }
